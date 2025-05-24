@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMI Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>AMI Admin</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="admin-panel">
+            <h2>Manage Properties</h2>
+            <form id="propertyForm" class="property-form">
+                <label>
+                    Title:
+                    <input type="text" id="title" required>
+                </label>
+                <label>
+                    Description:
+                    <textarea id="description" required></textarea>
+                </label>
+                <label>
+                    Image URL:
+                    <input type="url" id="image" required>
+                </label>
+                <button type="submit">Add Property</button>
+            </form>
+
+            <h3>Property List</h3>
+            <ul id="propertyList" class="property-list"></ul>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 AMI Real Estate</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
